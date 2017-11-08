@@ -1,0 +1,8 @@
+git init
+git add .
+git commit -m "comment"
+
+git remote add origin <repository_url>
+git push -u origin <branch_name_test>
+git push --set-upstream origin master:test
+git push -u origin master:test

@@ -7,8 +7,9 @@ import java.io.Serializable;
 import javax.persistence.Column;
 import javax.persistence.Id;
 
+import org.springframework.data.elasticsearch.annotations.Document;
 import org.springframework.data.mongodb.core.index.Indexed;
-import org.springframework.data.mongodb.core.mapping.Document;
+
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
@@ -18,8 +19,10 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
  * @author Administrator
  *
  */
-@Document(collection = "Users")
+//@Document(collection = "Users",indexName = "mkyong", type = "books")
 @JsonIgnoreProperties(ignoreUnknown = false)
+//@Document(indexName = "customer", type = "customer", shards = 1, replicas = 0, refreshInterval = "-1")
+@Document(indexName = "Users", type = "Users")
 public class User implements Serializable {
 
 	/**
