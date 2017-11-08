@@ -26,6 +26,33 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 public class User implements Serializable {
 
 	/**
+	 * @param id
+	 * @param username
+	 * @param password
+	 * @param firstName
+	 * @param lastName
+	 * @param email
+	 * @param mobileNo
+	 * @param extension
+	 * @param isActive
+	 * @param activationKey
+	 */
+	public User(String id, String username, String password, String firstName, String lastName, String email,
+			String mobileNo, String extension, Boolean isActive, String activationKey) {
+		super();
+		this.id = id;
+		this.username = username;
+		this.password = password;
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.email = email;
+		this.mobileNo = mobileNo;
+		this.extension = extension;
+		this.isActive = isActive;
+		this.activationKey = activationKey;
+	}
+
+	/**
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;

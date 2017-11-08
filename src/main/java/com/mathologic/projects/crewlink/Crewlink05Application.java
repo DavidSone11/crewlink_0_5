@@ -20,7 +20,7 @@ import org.springframework.security.config.annotation.method.configuration.Enabl
 
 @EnableJpaRepositories("com.mathologic.projects.repositories")
 @EnableMongoRepositories("com.mathologic.projects.mongo.repositories")
-@EnableElasticsearchRepositories("com.mathologic.projects.mongo.elasticsearch.repositories")
+//@EnableElasticsearchRepositories("com.mathologic.projects.mongo.elasticsearch.repositories")
 @Configuration
 @EnableAutoConfiguration
 @SpringBootApplication

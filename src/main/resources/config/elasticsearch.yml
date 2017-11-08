@@ -1,0 +1,10 @@
+################################### Cluster ###################################
+
+# Cluster name identifies your cluster for auto-discovery. If you're running
+# multiple clusters on the same network, make sure you're using unique names.
+#
+http.host: 0.0.0.0
+cluster.name: crewlink_db-cluster
+node.name: dev-node
+http.cors.enabled: true
+http.cors.allow-origin: "*"
